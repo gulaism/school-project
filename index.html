@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        openSans: ['"Open Sans"', 'sans-serif'],
+                        source: ['"Source Sans 3"', 'sans-serif'],
+                        poppins: ['"Poppins"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="relative z-[10]">
+        <div class="container h-[96px] mx-auto flex items-center justify-between py-[24px]">
+            <div class="flex items-center gap-x-[136px]">
+                <a href="#" class="logo w-[126px] h-[41px]">
+                    <img class="w-full object-cover" src="./assets/images/logo-orange.svg" alt="">
+                </a>
+                <nav
+                    class="flex items-center font-openSans text-white gap-x-[24px] text-[16px] font-semibold leading-[48px] tracking-[-0.32px] h-[48px]">
+                    <a class="px-[15px]" href="#">Home</a>
+                    <a class="px-[15px]" href="#">Courses</a>
+                    <a class="px-[15px]" href="#">Instuctors</a>
+                    <a class="px-[15px]" href="#">Schedules</a>
+                    <a class="px-[15px]" href="#">Contact Us</a>
+                </nav>
+            </div>
+            <div class="flex items-center">
+                <button class="search w-[24px] h-[24px] mr-[15px]">
+                    <img class="object-cover w-full" src="./assets/images/bx_search.svg" alt="">
+                </button>
+                <button
+                    class="text-white py-[8px] px-[18px] text-[16px] font-semibold leading-normal mr-[8px] font-source">
+                    Login
+                </button>
+                <button
+                    class="bg-white py-[12px] px-[24px] text-[#FF6F28] text-[16px] font-semibold leading-5 rounded-[5px] font-source">
+                    Register
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="slider relative top-[-96px] z-[0] mb-[140px]">
+        <figure class="aspect-[2/1] relative">
+            <img class="w-full h-full object-cover"
+                src="https://f.hubspotusercontent10.net/hubfs/20614319/Imported_Blog_Media/Call-Center-Etiquette-New.jpg"
+                alt="">
+        </figure>
+        <div class="container absolute inset-0 flex items-center mx-auto justify-center">
+            <div class="">
+                <div class="w-[734px] mx-auto text-white text-center mb-[60px]">
+                    <div class="font-poppins text-[60px] font-bold leading-normal mb-[12px]">
+                        A Classical Education for the Future
+                    </div>
+                    <div class="font-source text-[24px] font-normal leading-9 mb-[46px]">
+                        We prepare you to engage in the world that is and to help bring about a world that ought to be
+                    </div>
+                    <button
+                        class="bg-[#FF6F28] h-[60px] px-[42px] font-source text-[16px] font-semibold leading-5 rounded-[5px]">
+                        Get Started
+                    </button>
+                </div>
+                <div
+                    class="help bg-white flex absolute w-[969px] left-0 right-0 mx-auto h-[136px] px-[108px] justify-between items-center text-[24px] leading-normal font-normal rounded-[10px] bottom-[-68px]">
+                    <div class="flex gap-x-[24px] items-center">
+                        <div class="w-[60px] h-[60px] p-[12px] rounded-full bg-[#FFE7DB]">
+                            <img class="object-cover w-full h-full" src="./assets/images/akar-icons_chat-dots.svg"
+                                alt="">
+                        </div>
+                        <div class="">
+                            Live chat
+                        </div>
+                    </div>
+                    <div class="flex gap-x-[24px] items-center">
+                        <div class="w-[60px] h-[60px] p-[12px] rounded-full bg-[#FFE7DB]">
+                            <img class="object-cover w-full h-full" src="./assets/images/cib_skillshare.svg" alt="">
+                        </div>
+                        <div class="">
+                            Examination
+                        </div>
+                    </div>
+                    <div class="flex gap-x-[24px] items-center">
+                        <div class="w-[60px] h-[60px] p-[12px] rounded-full bg-[#FFE7DB]">
+                            <img class="object-cover w-full h-full" src="./assets/images/users.svg" alt="">
+                        </div>
+                        <div class="">
+                            Competition
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="categories font-poppins mb-[95px]">
+        <div class="container pt-[48px] py-[99px]">
+            <div class="text-5xl leading-normal font-semibold text-center mb-[48px]">
+                Top cartegories
+            </div>
+            <div class="text-right">
+                <button class="text-[#F77E23] text-[24px] font-normal leading-normal  mb-[24px]">
+                    See all
+                </button>
+            </div>
+
+            <div class="box-items grid grid-cols-4 gap-x-[32px] text-white text-[32px] font-semibold leading-normal">
+                <article class="item h-[431px] relative">
+                    <figure>
+                        <img class="w-full h-[431px] object-cover"
+                            src="https://media.istockphoto.com/id/540526464/photo/brilliant-ideas-in-the-making.jpg?s=612x612&w=0&k=20&c=N0YpZIKuldV0LfmKeLUl_nIkQrjDWbqk8W1vaEyyOrY="
+                            alt="">
+                    </figure>
+                    <div class="absolute bottom-[21px] left-[21px] z-[1]">Marketing</div>
+                </article>
+                <article class="item h-[431px] relative">
+                    <figure>
+                        <img class="w-full h-[431px] object-cover"
+                            src="https://www.shutterstock.com/image-photo/vertical-portrait-two-businesswoman-working-600nw-2296369025.jpg"
+                            alt="">
+                    </figure>
+                    <div class="absolute bottom-[21px] left-[21px] z-[1]">Design</div>
+                </article>
+                <article class="item h-[431px] relative">
+                    <figure>
+                        <img class="w-full h-[431px] object-cover"
+                            src="https://img.freepik.com/premium-photo/portrait-two-young-people-talking-male-manager-while-discussing-software-development-project-modern-office-copy-space_236854-29530.jpg?size=626&ext=jpg"
+                            alt="">
+                    </figure>
+                    <div class="absolute bottom-[21px] left-[21px] z-[1]">Programming</div>
+                </article>
+                <article class="item h-[431px] relative">
+                    <figure>
+                        <img class="w-full h-[431px] object-cover"
+                            src="https://as2.ftcdn.net/v2/jpg/04/89/37/45/1000_F_489374530_w7xfVLUdPPIxpPfc1IDLEeZ7FUlGFKqi.jpg"
+                            alt="">
+                    </figure>
+                    <div class="absolute bottom-[21px] left-[21px] z-[1]">Technology</div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[rgba(255,231,219,1)] py-[57px] mb-[100px]">
+        <div class="container font-poppins flex gap-x-[97px]">
+            <div class="relative w-[498px]">
+                <img class="h-[498px] object-cover" src="./assets/images/experts.svg" alt="">
+                <div
+                    class="absolute bg-white rounded-[10px] py-[16px] px-[18px] w-[168px] bottom-[82px] right-[-37px] text-center">
+                    <img class="w-[50px] h-[50px] object-cover bg-[#FFE7DB] rounded-full p-[10px] mx-auto mb-[12px]"
+                        src="./assets/images/users.svg" alt="">
+                    <div class="text-[20px] leading-normal font-normal text-[#333] mb-[16px]">
+                        <span class="text-[#F77E23] font-semibold relative">Outstanding <span><img
+                                    class="absolute bottom-0 left-0 right-0" src="./assets/images/Vector-out.svg"
+                                    alt=""></span></span> Instructors
+                    </div>
+                    <div class="avatars flex ml-[42px]">
+                        <img class="w-[40px] h-[40px] object-cover rounded-full ml-[-19px] border-[3px] border-solid border-white"
+                            src="https://www.opticalexpress.co.uk/media/1064/man-with-glasses-smiling-looking-into-distance.jpg"
+                            alt="">
+                        <img class="w-[40px] h-[40px] object-cover rounded-full ml-[-19px] border-[3px] border-solid border-white"
+                            src="https://www.opticalexpress.co.uk/media/1064/man-with-glasses-smiling-looking-into-distance.jpg"
+                            alt="">
+                        <img class="w-[40px] h-[40px] object-cover rounded-full ml-[-19px] border-[3px] border-solid border-white"
+                            src="https://www.opticalexpress.co.uk/media/1064/man-with-glasses-smiling-looking-into-distance.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w-[608px] mt-[60px]">
+                <div class="text-[52px] font-bold leading-normal text-[#333] mb-[24px]">
+                    We are <span class="text-[#F77E23] relative">Experts <span
+                            class="absolute left-0 bottom-[-9px]"><img src="./assets/images/Vector-exp.svg"
+                                alt=""></span></span> Learning Institution
+                </div>
+                <div class="text-[24px] font-normal leading-normal text-[#333] mb-[64px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum volutpat platea mi,
+                    adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit
+                </div>
+                <button class="h-[60px] bg-[#FF6F28] rounded-[5px] px-[42px] text-white font-source">
+                    Enroll now
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="courses font-poppins mb-[138px]">
+        <div class="container">
+            <div
+                class="text-[#333] capitalize text-[48px] font-semibold leading-normal mx-auto text-center w-[462px] mb-[25px]">
+                Explore our popular course
+            </div>
+            <div class="flex justify-end mb-[65px]">
+                <button class="h-[46px] bg-[#F77E23] rounded-[50px] px-[16px] flex text-white items-center gap-x-[4px]">
+                    <img src="./assets/images/dropdown.svg" alt="">
+                    <span>Sort by</span>
+                </button>
+            </div>
+
+            <div class="grid grid-cols-3 gap-x-[33px] gap-y-[42px]">
+                <figure>
+                    <img src="https://www.sandler.com/wp-content/uploads/2022/10/Business-People_Meeting-engaging.jpg"
+                        alt="">
+                    <div class="p-[21px] leading-normal">
+                        <div class="above justify-between flex gap-x-[1px] mb-[36px]">
+                            <div class="text-[#333] capitalize text-[24px] font-medium">Learn Marketing from Top
+                                Instructors.</div>
+                            <div class="flex gap-x-[6px] items-center">
+                                <img src="./assets/images/ant-design_star-outlined.svg" alt="">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="below text-[16px] font-medium text-[#333] flex items-center justify-between">
+                            <div class="flex">
+                                <div class="mr-[16px]">6 weeks</div>
+                                <div class="flex items-center gap-x-[8px]">
+                                    <img class="w-[16px] h-[16px]" src="./assets/images/users.svg" alt="">
+                                    <span>1.5k Students</span>
+                                </div>
+                            </div>
+                            <div class="text-[#F77E23] text-[24px] font-semibold">30.5$</div>
+                        </div>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="https://www.sandler.com/wp-content/uploads/2022/10/Business-People_Meeting-engaging.jpg"
+                        alt="">
+                    <div class="p-[21px] leading-normal">
+                        <div class="above justify-between flex gap-x-[1px] mb-[36px]">
+                            <div class="text-[#333] capitalize text-[24px] font-medium">Learn Marketing from Top
+                                Instructors.</div>
+                            <div class="flex gap-x-[6px] items-center">
+                                <img src="./assets/images/ant-design_star-outlined.svg" alt="">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="below text-[16px] font-medium text-[#333] flex items-center justify-between">
+                            <div class="flex">
+                                <div class="mr-[16px]">6 weeks</div>
+                                <div class="flex items-center gap-x-[8px]">
+                                    <img class="w-[16px] h-[16px]" src="./assets/images/users.svg" alt="">
+                                    <span>1.5k Students</span>
+                                </div>
+                            </div>
+                            <div class="text-[#F77E23] text-[24px] font-semibold">30.5$</div>
+                        </div>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="https://www.sandler.com/wp-content/uploads/2022/10/Business-People_Meeting-engaging.jpg"
+                        alt="">
+                    <div class="p-[21px] leading-normal">
+                        <div class="above justify-between flex gap-x-[1px] mb-[36px]">
+                            <div class="text-[#333] capitalize text-[24px] font-medium">Learn Marketing from Top
+                                Instructors.</div>
+                            <div class="flex gap-x-[6px] items-center">
+                                <img src="./assets/images/ant-design_star-outlined.svg" alt="">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="below text-[16px] font-medium text-[#333] flex items-center justify-between">
+                            <div class="flex">
+                                <div class="mr-[16px]">6 weeks</div>
+                                <div class="flex items-center gap-x-[8px]">
+                                    <img class="w-[16px] h-[16px]" src="./assets/images/users.svg" alt="">
+                                    <span>1.5k Students</span>
+                                </div>
+                            </div>
+                            <div class="text-[#F77E23] text-[24px] font-semibold">30.5$</div>
+                        </div>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="https://www.sandler.com/wp-content/uploads/2022/10/Business-People_Meeting-engaging.jpg"
+                        alt="">
+                    <div class="p-[21px] leading-normal">
+                        <div class="above justify-between flex gap-x-[1px] mb-[36px]">
+                            <div class="text-[#333] capitalize text-[24px] font-medium">Learn Marketing from Top
+                                Instructors.</div>
+                            <div class="flex gap-x-[6px] items-center">
+                                <img src="./assets/images/ant-design_star-outlined.svg" alt="">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="below text-[16px] font-medium text-[#333] flex items-center justify-between">
+                            <div class="flex">
+                                <div class="mr-[16px]">6 weeks</div>
+                                <div class="flex items-center gap-x-[8px]">
+                                    <img class="w-[16px] h-[16px]" src="./assets/images/users.svg" alt="">
+                                    <span>1.5k Students</span>
+                                </div>
+                            </div>
+                            <div class="text-[#F77E23] text-[24px] font-semibold">30.5$</div>
+                        </div>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="https://www.sandler.com/wp-content/uploads/2022/10/Business-People_Meeting-engaging.jpg"
+                        alt="">
+                    <div class="p-[21px] leading-normal">
+                        <div class="above justify-between flex gap-x-[1px] mb-[36px]">
+                            <div class="text-[#333] capitalize text-[24px] font-medium">Learn Marketing from Top
+                                Instructors.</div>
+                            <div class="flex gap-x-[6px] items-center">
+                                <img src="./assets/images/ant-design_star-outlined.svg" alt="">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="below text-[16px] font-medium text-[#333] flex items-center justify-between">
+                            <div class="flex">
+                                <div class="mr-[16px]">6 weeks</div>
+                                <div class="flex items-center gap-x-[8px]">
+                                    <img class="w-[16px] h-[16px]" src="./assets/images/users.svg" alt="">
+                                    <span>1.5k Students</span>
+                                </div>
+                            </div>
+                            <div class="text-[#F77E23] text-[24px] font-semibold">30.5$</div>
+                        </div>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="https://www.sandler.com/wp-content/uploads/2022/10/Business-People_Meeting-engaging.jpg"
+                        alt="">
+                    <div class="p-[21px] leading-normal">
+                        <div class="above justify-between flex gap-x-[1px] mb-[36px]">
+                            <div class="text-[#333] capitalize text-[24px] font-medium">Learn Marketing from Top
+                                Instructors.</div>
+                            <div class="flex gap-x-[6px] items-center">
+                                <img src="./assets/images/ant-design_star-outlined.svg" alt="">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="below text-[16px] font-medium text-[#333] flex items-center justify-between">
+                            <div class="flex">
+                                <div class="mr-[16px]">6 weeks</div>
+                                <div class="flex items-center gap-x-[8px]">
+                                    <img class="w-[16px] h-[16px]" src="./assets/images/users.svg" alt="">
+                                    <span>1.5k Students</span>
+                                </div>
+                            </div>
+                            <div class="text-[#F77E23] text-[24px] font-semibold">30.5$</div>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[rgba(255,231,219,1)] py-[57px] mb-[100px]">
+        <div class="container font-poppins flex gap-x-[97px]">
+            <div class="w-[608px] mt-[87px]">
+                <div class="text-[52px] font-bold leading-normal text-[#333] mb-[24px]">
+                    Our online <span class="text-[#F77E23]">examination</span> is top-notch
+                </div>
+                <div class="text-[24px] font-normal leading-normal text-[#333] mb-[64px]">
+                    Prepare your self for greater challenges with our online examination.
+                </div>
+                <button class="h-[60px] bg-[#FF6F28] rounded-[5px] px-[42px] text-white font-source">
+                    Take a test
+                </button>
+            </div>
+            <div class="relative w-[498px]">
+                <img class="h-[498px] object-cover" src="./assets/images/experts.svg" alt="">
+                <div
+                    class="absolute bg-white rounded-[10px] py-[16px] px-[18px] w-[168px] bottom-[72px] left-[-37px] text-center">
+                    <img class="w-[50px] h-[50px] object-cover bg-[#FFE7DB] rounded-full p-[10px] mx-auto mb-[12px]"
+                        src="./assets/images/users.svg" alt="">
+                    <div class="text-[20px] leading-normal font-normal text-[#333] mb-[16px]">
+                        <span class="text-[#F77E23] font-semibold relative">Outstanding <span><img
+                                    class="absolute bottom-0 left-0 right-0" src="./assets/images/Vector-out.svg"
+                                    alt=""></span></span> Instructors
+                    </div>
+                    <div class="avatars flex ml-[42px]">
+                        <img class="w-[40px] h-[40px] object-cover rounded-full ml-[-19px] border-[3px] border-solid border-white"
+                            src="https://www.opticalexpress.co.uk/media/1064/man-with-glasses-smiling-looking-into-distance.jpg"
+                            alt="">
+                        <img class="w-[40px] h-[40px] object-cover rounded-full ml-[-19px] border-[3px] border-solid border-white"
+                            src="https://www.opticalexpress.co.uk/media/1064/man-with-glasses-smiling-looking-into-distance.jpg"
+                            alt="">
+                        <img class="w-[40px] h-[40px] object-cover rounded-full ml-[-19px] border-[3px] border-solid border-white"
+                            src="https://www.opticalexpress.co.uk/media/1064/man-with-glasses-smiling-looking-into-distance.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories2 font-poppins mb-[100px] leading-normal">
+        <div class="container pt-[48px] py-[99px]">
+            <div class="text-5xl leading-normal font-semibold text-center mb-[48px]">
+                Popular examination
+            </div>
+            <div class="text-right">
+                <button class="text-[#F77E23] text-[24px] font-normal leading-normal  mb-[24px]">
+                    See all
+                </button>
+            </div>
+
+            <div class="box-items grid grid-cols-4 gap-x-[32px] text-white text-[32px] font-semibold leading-normal">
+                <article class="item h-[303px] rounded-[10px] relative">
+                    <figure>
+                        <img class="w-full h-[303px] rounded-[10px] object-cover"
+                            src="https://media.istockphoto.com/id/540526464/photo/brilliant-ideas-in-the-making.jpg?s=612x612&w=0&k=20&c=N0YpZIKuldV0LfmKeLUl_nIkQrjDWbqk8W1vaEyyOrY="
+                            alt="">
+                    </figure>
+                    <div class="absolute bottom-[21px] left-[21px] z-[1] max-w-[181px]">NATURE of Science</div>
+                </article>
+                <article class="item h-[303px] rounded-[10px] relative">
+                    <figure>
+                        <img class="w-full h-[303px] rounded-[10px] object-cover"
+                            src="https://www.shutterstock.com/image-photo/vertical-portrait-two-businesswoman-working-600nw-2296369025.jpg"
+                            alt="">
+                    </figure>
+                    <div class="absolute bottom-[21px] left-[21px] z-[1] max-w-[181px]">2022
+                        Astro Report</div>
+                </article>
+                <article class="item h-[303px] rounded-[10px] relative">
+                    <figure>
+                        <img class="w-full h-[303px] rounded-[10px] object-cover"
+                            src="https://img.freepik.com/premium-photo/portrait-two-young-people-talking-male-manager-while-discussing-software-development-project-modern-office-copy-space_236854-29530.jpg?size=626&ext=jpg"
+                            alt="">
+                    </figure>
+                    <div class="absolute bottom-[21px] left-[21px] z-[1] max-w-[181px]">Data Analysis With Python</div>
+                </article>
+                <article class="item h-[303px] rounded-[10px] relative">
+                    <figure>
+                        <img class="w-full h-[303px] rounded-[10px] object-cover"
+                            src="https://as2.ftcdn.net/v2/jpg/04/89/37/45/1000_F_489374530_w7xfVLUdPPIxpPfc1IDLEeZ7FUlGFKqi.jpg"
+                            alt="">
+                    </figure>
+                    <div class="absolute bottom-[21px] left-[21px] z-[1] max-w-[181px]">Advanced UX Designs</div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="reviews mb-[115px]">
+        <div class="container">
+            <div
+                class="font-poppins text-[#242243] text-[32px] font-semibold capitalize leading-normal mb-[13px] text-center">
+                Reviews</div>
+            <div class="flex items-center gap-x-[34px]">
+                <div class="font-openSans w-[382px] text-[48px] capitalize leading-normal font-extrabold">
+                    <div class="mb-[60px]">What our <span class="relative text-[#F77E23]">Students <span
+                                class="absolute left-0 right-0 bottom-0"> <img src="./assets/images/Vector-stu.svg"
+                                    alt=""></span></span> say about us</div>
+                    <div class="flex items-center gap-x-[48px]">
+                        <img class="w-[60px] h-[60px] object-cover p-[15px] rounded-full border-solid border-[#F77E23] border-[1px]"
+                            src="./assets/images/left.svg" alt="">
+                        <img class="w-[60px] h-[60px] object-cover p-[15px] rounded-full border-solid border-[#F77E23] border-[1px]"
+                            src="./assets/images/right.svg" alt="">
+                    </div>
+                </div>
+                <div class="boxes py-[41px] px-[26px] flex gap-x-[32px] font-openSans relative">
+                    <div class="item pt-[57px] pb-[48px] px-[48px] rounded-[10px] w-[480px]">
+                        <div class="above flex gap-x-[16px] items-center leading-normal mb-[24px]">
+                            <div>
+                                <img class="w-[70px] h-[70px] rounded-full object-cover" src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                                    alt="">
+                            </div>
+                            <div>
+                                <div class="text-[20px] font-bold mb-[6px]">Mohh Jumah</div>
+                                <div class="text-[#F77E23] text-[18px] font-semibold">Senior Developer</div>
+                            </div>
+                        </div>
+                        <div class="below text-[18px] font-normal text-[#333] leading-[30px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis 
+                        </div>
+
+                    </div>
+                    <div class="item pt-[57px] pb-[48px] px-[48px] rounded-[10px] w-[480px] absolute right-[-240px] top-[41px]">
+                        <div class="above flex gap-x-[16px] items-center leading-normal mb-[24px]">
+                            <div>
+                                <img class="w-[70px] h-[70px] rounded-full object-cover" src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                                    alt="">
+                            </div>
+                            <div>
+                                <div class="text-[20px] font-bold mb-[6px]">Mohh Jumah</div>
+                                <div class="text-[#F77E23] text-[18px] font-semibold">Senior Developer</div>
+                            </div>
+                        </div>
+                        <div class="below text-[18px] font-normal text-[#333] leading-[30px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black pt-[75px]">
+        <div class="container">
+            <div class="above flex text-white justify-between font-poppins text-[16px] font-normal mb-[50px]">
+                <div class="left">
+                    <div class="mb-[24px]">
+                        <img class="w-[126px] h-[38px] object-cover" src="./assets/images/logo-orange.svg" alt="">
+                    </div>
+                    <div class="leading-normal w-[296px] lowercase tracking-[1px] mb-[32px]">We are not here to sell you products, we sell value through our expertise.</div>
+                    <div class="flex">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="right flex w-[500px] justify-between gap-x-[96px]">
+                    <div>
+                        <div class="mb-[16px]">
+                            <div class="font-semibold">Address:</div>
+                            <div>38 opebi Road, Ikeja, Lagos State, Nigeia.</div>
+                        </div>
+                        <div class="mb-[16px]">
+                            <div class="font-semibold">Phone:</div>
+                            <div>+2349022396389</div>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Email:</div>
+                            <div>contact@contentionary.com</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold mb-[24px]">Company</div>
+                        <a class="mb-[12px] block" href="#">About Us</a>
+                        <a class="mb-[12px] block" href="#">Features</a>
+                        <a class="block" href="#">Pricing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="input font-poppins">
+                <div class="text-white text-[24px] font-normal text-center mb-[17px]">Subscribe to get latest updates</div>
+                <input class="p-[18px] w-[419px]" type="text" placeholder="Your Email address">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
