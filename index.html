@@ -28,15 +28,19 @@
     </script>
 </head>
 
-<body>
-    <header class="relative z-[10]">
-        <div class="container h-[96px] mx-auto flex items-center justify-between py-[24px]">
-            <div class="flex items-center gap-x-[136px]">
-                <a href="#" class="logo w-[126px] h-[41px]">
+<body class="overflow-x-hidden">
+    <header class="relative z-[10] bg-white lg:bg-transparent">
+        <div
+            class="container lg:px-0 px-[24px] h-[96px] mx-auto flex items-center justify-between py-[28px] lg:py-[24px]">
+            <div class="flex items-center gap-x-[12px] lg:gap-x-[136px]">
+                <button class="lg:hidden">
+                    <img src="./assets/images/charm_menu-hamburger.svg" alt="">
+                </button>
+                <a href="#" class="logo lg:w-[126px] lg:h-[41px] w-[92px] h-[30px]">
                     <img class="w-full object-cover" src="./assets/images/logo-orange.svg" alt="">
                 </a>
                 <nav
-                    class="flex items-center font-openSans text-white gap-x-[24px] text-[16px] font-semibold leading-[48px] tracking-[-0.32px] h-[48px]">
+                    class="hidden lg:flex items-center font-openSans lg:text-white gap-x-[24px] text-[16px] font-semibold leading-[48px] tracking-[-0.32px] h-[48px]">
                     <a class="px-[15px]" href="#">Home</a>
                     <a class="px-[15px]" href="#">Courses</a>
                     <a class="px-[15px]" href="#">Instuctors</a>
@@ -44,7 +48,7 @@
                     <a class="px-[15px]" href="#">Contact Us</a>
                 </nav>
             </div>
-            <div class="flex items-center">
+            <div class="hidden lg:flex items-center">
                 <button class="search w-[24px] h-[24px] mr-[15px]">
                     <img class="object-cover w-full" src="./assets/images/bx_search.svg" alt="">
                 </button>
@@ -57,21 +61,26 @@
                     Register
                 </button>
             </div>
+            <button class="lg:hidden">
+                <img src="./assets/images/carbon_user-avatar.svg" alt="">
+            </button>
         </div>
     </header>
-    <section class="slider relative top-[-96px] z-[0] mb-[140px]">
-        <figure class="aspect-[2/1] relative">
+    <section class="slider relative lg:top-[-96px] z-[0] lg:mb-[140px]">
+        <figure class="aspect-[4/5] lg:aspect-[initial] relative">
             <img class="w-full h-full object-cover"
                 src="https://f.hubspotusercontent10.net/hubfs/20614319/Imported_Blog_Media/Call-Center-Etiquette-New.jpg"
                 alt="">
         </figure>
-        <div class="container absolute inset-0 flex items-center mx-auto justify-center">
+        <div class="lg:container absolute inset-0 flex items-center mx-auto justify-center">
             <div class="">
-                <div class="w-[734px] mx-auto text-white text-center mb-[60px]">
-                    <div class="font-poppins text-[60px] font-bold leading-normal mb-[12px]">
+                <div class="lg:w-[734px] mx-auto text-white text-center mb-[60px]">
+                    <div
+                        class="font-poppins text-[32px] lg:text-[60px] font-bold leading-normal mb-[24px] lg:mb-[12px]">
                         A Classical Education for the Future
                     </div>
-                    <div class="font-source text-[24px] font-normal leading-9 mb-[46px]">
+                    <div
+                        class="font-source text-[18px] leading-[25px] lg:text-[24px] font-normal lg:leading-9 mb-[64px] lg:mb-[46px]">
                         We prepare you to engage in the world that is and to help bring about a world that ought to be
                     </div>
                     <button
@@ -80,9 +89,9 @@
                     </button>
                 </div>
                 <div
-                    class="help bg-white flex absolute w-[969px] left-0 right-0 mx-auto h-[136px] px-[108px] justify-between items-center text-[24px] leading-normal font-normal rounded-[10px] bottom-[-68px]">
-                    <div class="flex gap-x-[24px] items-center">
-                        <div class="w-[60px] h-[60px] p-[12px] rounded-full bg-[#FFE7DB]">
+                    class="help grid grid-cols-2 bg-white lg:flex absolute lg:w-[969px] left-0 right-0 mx-auto h-[136px] px-[108px] justify-between items-center text-[18px] lg:text-[24px] leading-normal font-normal rounded-[10px] lg:bottom-[-68px] bottom-[-138px]">
+                    <div class="flex lg:gap-x-[24px] gap-x-[16px] items-center">
+                        <div class="lg:size-[60px] size-[50px] lg:p-[12px] p-[10px] rounded-full bg-[#FFE7DB]">
                             <img class="object-cover w-full h-full" src="./assets/images/akar-icons_chat-dots.svg"
                                 alt="">
                         </div>
@@ -90,16 +99,16 @@
                             Live chat
                         </div>
                     </div>
-                    <div class="flex gap-x-[24px] items-center">
-                        <div class="w-[60px] h-[60px] p-[12px] rounded-full bg-[#FFE7DB]">
+                    <div class="flex lg:gap-x-[24px] gap-x-[16px] items-center">
+                        <div class="lg:size-[60px] size-[50px] lg:p-[12px] p-[10px] rounded-full bg-[#FFE7DB]">
                             <img class="object-cover w-full h-full" src="./assets/images/cib_skillshare.svg" alt="">
                         </div>
                         <div class="">
                             Examination
                         </div>
                     </div>
-                    <div class="flex gap-x-[24px] items-center">
-                        <div class="w-[60px] h-[60px] p-[12px] rounded-full bg-[#FFE7DB]">
+                    <div class="flex lg:gap-x-[24px] gap-x-[16px] items-center">
+                        <div class="lg:size-[60px] size-[50px] lg:p-[12px] p-[10px] rounded-full bg-[#FFE7DB]">
                             <img class="object-cover w-full h-full" src="./assets/images/users.svg" alt="">
                         </div>
                         <div class="">
@@ -112,45 +121,46 @@
         </div>
 
     </section>
-    <section class="categories font-poppins mb-[95px]">
+    <section class=" categories font-poppins mb-[95px] lg:mt-0 mt-[136px]">
         <div class="container pt-[48px] py-[99px]">
-            <div class="text-5xl leading-normal font-semibold text-center mb-[48px]">
+            <div class="text-[24px] lg:text-5xl leading-normal font-semibold text-center mb-[24px] lg:mb-[48px]">
                 Top cartegories
             </div>
             <div class="text-right">
-                <button class="text-[#F77E23] text-[24px] font-normal leading-normal  mb-[24px]">
+                <button class="text-[#F77E23] text-[14px] lg:text-[24px] font-normal leading-normal  mb-[24px]">
                     See all
                 </button>
             </div>
 
-            <div class="box-items grid grid-cols-4 gap-x-[32px] text-white text-[32px] font-semibold leading-normal">
-                <article class="item h-[431px] relative">
+            <div
+                class="box-items grid grid-cols-4 lg:gap-x-[32px] gap-x-[16px] text-white text-[16px lg:text-[32px] font-semibold leading-normal">
+                <article class="item w-[116px] lg:w-full h-[133px] lg:h-[431px] relative">
                     <figure>
-                        <img class="w-full h-[431px] object-cover"
+                        <img class="w-full w-[116px] lg:w-full h-[133px] lg:h-[431px] object-cover"
                             src="https://media.istockphoto.com/id/540526464/photo/brilliant-ideas-in-the-making.jpg?s=612x612&w=0&k=20&c=N0YpZIKuldV0LfmKeLUl_nIkQrjDWbqk8W1vaEyyOrY="
                             alt="">
                     </figure>
                     <div class="absolute bottom-[21px] left-[21px] z-[1]">Marketing</div>
                 </article>
-                <article class="item h-[431px] relative">
+                <article class="item w-[116px] lg:w-full h-[133px] lg:h-[431px] relative">
                     <figure>
-                        <img class="w-full h-[431px] object-cover"
+                        <img class="w-full w-[116px] lg:w-full h-[133px] lg:h-[431px] object-cover"
                             src="https://www.shutterstock.com/image-photo/vertical-portrait-two-businesswoman-working-600nw-2296369025.jpg"
                             alt="">
                     </figure>
                     <div class="absolute bottom-[21px] left-[21px] z-[1]">Design</div>
                 </article>
-                <article class="item h-[431px] relative">
+                <article class="item w-[116px] lg:w-full h-[133px] lg:h-[431px] relative">
                     <figure>
-                        <img class="w-full h-[431px] object-cover"
+                        <img class="w-full w-[116px] lg:w-full h-[133px] lg:h-[431px] object-cover"
                             src="https://img.freepik.com/premium-photo/portrait-two-young-people-talking-male-manager-while-discussing-software-development-project-modern-office-copy-space_236854-29530.jpg?size=626&ext=jpg"
                             alt="">
                     </figure>
                     <div class="absolute bottom-[21px] left-[21px] z-[1]">Programming</div>
                 </article>
-                <article class="item h-[431px] relative">
+                <article class="item w-[116px] lg:w-full h-[133px] lg:h-[431px] relative">
                     <figure>
-                        <img class="w-full h-[431px] object-cover"
+                        <img class="w-full w-[116px] lg:w-full h-[133px] lg:h-[431px] object-cover"
                             src="https://as2.ftcdn.net/v2/jpg/04/89/37/45/1000_F_489374530_w7xfVLUdPPIxpPfc1IDLEeZ7FUlGFKqi.jpg"
                             alt="">
                     </figure>
@@ -159,7 +169,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-[rgba(255,231,219,1)] py-[57px] mb-[100px]">
+    <section class=" bg-[rgba(255,231,219,1)] py-[57px] mb-[100px]">
         <div class="container font-poppins flex gap-x-[97px]">
             <div class="relative w-[498px]">
                 <img class="h-[498px] object-cover" src="./assets/images/experts.svg" alt="">
@@ -168,9 +178,9 @@
                     <img class="w-[50px] h-[50px] object-cover bg-[#FFE7DB] rounded-full p-[10px] mx-auto mb-[12px]"
                         src="./assets/images/users.svg" alt="">
                     <div class="text-[20px] leading-normal font-normal text-[#333] mb-[16px]">
-                        <span class="text-[#F77E23] font-semibold relative">Outstanding <span><img
-                                    class="absolute bottom-0 left-0 right-0" src="./assets/images/Vector-out.svg"
-                                    alt=""></span></span> Instructors
+                        <span class="text-[#F77E23] font-semibold relative">Outstanding <span
+                                class="absolute left-0 bottom-0 block z-[10]"><img class=""
+                                    src="./assets/images/Vector-outstanding.svg" alt=""></span></span> Instructors
                     </div>
                     <div class="avatars flex ml-[42px]">
                         <img class="w-[40px] h-[40px] object-cover rounded-full ml-[-19px] border-[3px] border-solid border-white"
@@ -201,17 +211,19 @@
             </div>
         </div>
     </section>
-    <section class="courses font-poppins mb-[138px]">
+    <section class=" courses font-poppins mb-[138px]">
         <div class="container">
             <div
                 class="text-[#333] capitalize text-[48px] font-semibold leading-normal mx-auto text-center w-[462px] mb-[25px]">
                 Explore our popular course
             </div>
             <div class="flex justify-end mb-[65px]">
-                <button class="h-[46px] bg-[#F77E23] rounded-[50px] px-[16px] flex text-white items-center gap-x-[4px]">
-                    <img src="./assets/images/dropdown.svg" alt="">
-                    <span>Sort by</span>
-                </button>
+
+                <select
+                    class="h-[46px] bg-[#F77E23] rounded-[50px] px-[16px] flex text-white items-center gap-x-[4px] relative outline-none appearance-none">
+                    <option>Sort by</option>
+                    <img class="absolute left-0" src="./assets/images/dropdown.svg" alt="">
+                </select>
             </div>
 
             <div class="grid grid-cols-3 gap-x-[33px] gap-y-[42px]">
@@ -362,9 +374,9 @@
             </div>
         </div>
     </section>
-    <section class="bg-[rgba(255,231,219,1)] py-[57px] mb-[100px]">
-        <div class="container font-poppins flex gap-x-[97px]">
-            <div class="w-[608px] mt-[87px]">
+    <section class=" bg-[rgba(255,231,219,1)] py-[57px] mb-[100px]">
+        <div class="container font-poppins flex justify-between">
+            <div class="mt-[87px] w-[502px]">
                 <div class="text-[52px] font-bold leading-normal text-[#333] mb-[24px]">
                     Our online <span class="text-[#F77E23]">examination</span> is top-notch
                 </div>
@@ -380,11 +392,11 @@
                 <div
                     class="absolute bg-white rounded-[10px] py-[16px] px-[18px] w-[168px] bottom-[72px] left-[-37px] text-center">
                     <img class="w-[50px] h-[50px] object-cover bg-[#FFE7DB] rounded-full p-[10px] mx-auto mb-[12px]"
-                        src="./assets/images/users.svg" alt="">
+                        src="./assets/images/fe_shopping-bag.svg" alt="">
                     <div class="text-[20px] leading-normal font-normal text-[#333] mb-[16px]">
-                        <span class="text-[#F77E23] font-semibold relative">Outstanding <span><img
-                                    class="absolute bottom-0 left-0 right-0" src="./assets/images/Vector-out.svg"
-                                    alt=""></span></span> Instructors
+                        <span class="text-[#F77E23] font-semibold relative">Increase <span><img
+                                    class="absolute bottom-0 left-0 right-0" src="./assets/images/Vector-inc.svg"
+                                    alt=""></span></span> Your Job opportunity
                     </div>
                     <div class="avatars flex ml-[42px]">
                         <img class="w-[40px] h-[40px] object-cover rounded-full ml-[-19px] border-[3px] border-solid border-white"
@@ -401,7 +413,7 @@
             </div>
         </div>
     </section>
-    <section class="categories2 font-poppins mb-[100px] leading-normal">
+    <section class=" categories2 font-poppins mb-[100px] leading-normal">
         <div class="container pt-[48px] py-[99px]">
             <div class="text-5xl leading-normal font-semibold text-center mb-[48px]">
                 Popular examination
@@ -419,7 +431,7 @@
                             src="https://media.istockphoto.com/id/540526464/photo/brilliant-ideas-in-the-making.jpg?s=612x612&w=0&k=20&c=N0YpZIKuldV0LfmKeLUl_nIkQrjDWbqk8W1vaEyyOrY="
                             alt="">
                     </figure>
-                    <div class="absolute bottom-[21px] left-[21px] z-[1] max-w-[181px]">NATURE of Science</div>
+                    <div class="absolute bottom-[7px] left-[24px] z-[1] max-w-[181px]">NATURE of Science</div>
                 </article>
                 <article class="item h-[303px] rounded-[10px] relative">
                     <figure>
@@ -427,7 +439,7 @@
                             src="https://www.shutterstock.com/image-photo/vertical-portrait-two-businesswoman-working-600nw-2296369025.jpg"
                             alt="">
                     </figure>
-                    <div class="absolute bottom-[21px] left-[21px] z-[1] max-w-[181px]">2022
+                    <div class="absolute bottom-[7px] left-[24px] z-[1] max-w-[181px]">2022
                         Astro Report</div>
                 </article>
                 <article class="item h-[303px] rounded-[10px] relative">
@@ -436,7 +448,7 @@
                             src="https://img.freepik.com/premium-photo/portrait-two-young-people-talking-male-manager-while-discussing-software-development-project-modern-office-copy-space_236854-29530.jpg?size=626&ext=jpg"
                             alt="">
                     </figure>
-                    <div class="absolute bottom-[21px] left-[21px] z-[1] max-w-[181px]">Data Analysis With Python</div>
+                    <div class="absolute bottom-[7px] left-[24px] z-[1] max-w-[181px]">Data Analysis With Python</div>
                 </article>
                 <article class="item h-[303px] rounded-[10px] relative">
                     <figure>
@@ -444,18 +456,28 @@
                             src="https://as2.ftcdn.net/v2/jpg/04/89/37/45/1000_F_489374530_w7xfVLUdPPIxpPfc1IDLEeZ7FUlGFKqi.jpg"
                             alt="">
                     </figure>
-                    <div class="absolute bottom-[21px] left-[21px] z-[1] max-w-[181px]">Advanced UX Designs</div>
+                    <div class="absolute bottom-[7px] left-[24px] z-[1] max-w-[181px]">Advanced UX Designs</div>
                 </article>
             </div>
         </div>
     </section>
     <div
-        class="font-openSans text-[48px] text-center text-[#333] font-bold leading-normal w-[866px] mx-auto tracking-[-0.96px] mb-[64px]">
+        class=" font-openSans text-[48px] text-center text-[#333] font-bold leading-normal w-[866px] mx-auto tracking-[-0.96px] mb-[64px]">
         Competate with various scholars around the globe</div>
-    <section class="bg-[rgba(255,238,225,0.80)] py-[48px] mb-[100px]">
+    <section class=" bg-[rgba(255,238,225,0.80)] py-[48px] mb-[100px]">
         <div class="container flex justify-between">
-            <div class="w-[451px] h-[560px] mt-[-48px]">
+            <div class="w-[451px] h-[560px] mt-[-48px] relative">
                 <img class="w-full h-full object-cover" src="./assets/images/photo-boy-2.png" alt="">
+                <div
+                    class="absolute bg-white rounded-[10px] py-[16px] px-[18px] w-[168px] bottom-[72px] right-[-37px] text-center">
+                    <img class="w-[50px] h-[50px] object-cover bg-[#FFE7DB] rounded-full p-[10px] mx-auto mb-[12px]"
+                        src="./assets/images/fe_shopping-bag.svg" alt="">
+                    <div class="text-[20px] leading-normal font-normal text-[#333] mb-[16px]">
+                        <span class="text-[#F77E23] font-semibold relative">Den <span><img
+                                    class="absolute -bottom-[3px] left-0 right-0" src="./assets/images/Vector-den.svg"
+                                    alt=""></span></span> of Schorlars
+                    </div>
+                </div>
             </div>
             <div class="pt-[30px] px-[40px] pb-[48px] w-[604px] bg-white rounded-[10px] shadow">
                 <div class="text-center font-openSans text-[#333] font-semibold leading-normal mb-[44px]">Registration
@@ -480,21 +502,20 @@
                             <option class="text-[rgba(64,64,64,0.80)]" value="">List of courses</option>
                         </select>
                         <div class="absolute right-[16px] ">
-                            <img class="size-[24px]"
-                            src="./assets/images/Arrow - Down 2.svg" alt="">
+                            <img class="size-[24px]" src="./assets/images/Arrow - Down 2.svg" alt="">
                         </div>
-                        
+
                     </div>
 
                 </div>
                 <div class="flex justify-end">
                     <button class="text-white bg-[#F77E23] h-[52px] px-[80px] rounded-[5px]">Register</button>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    <section class="reviews mb-[115px]">
+    <section class=" reviews mb-[115px]">
         <div class="container">
             <div
                 class="font-poppins text-[#242243] text-[32px] font-semibold capitalize leading-normal mb-[13px] text-center">
@@ -559,7 +580,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-black pt-[75px] pb-[29px]">
+    <section class=" bg-black pt-[75px] pb-[29px]">
         <div class="container">
             <div class="above flex text-white justify-between font-poppins text-[16px] font-normal mb-[50px]">
                 <div class="left">
